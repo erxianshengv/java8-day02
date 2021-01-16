@@ -41,6 +41,7 @@ public class TestMethodRef {
         Function<Integer,String[]> fun=(x) -> new String[x];
         String[] strs=fun.apply(10);
         System.out.println(strs.length);
+        System.out.println("Test");
 
         Function<Integer,String[]> fun1=String[]::new;
         String[] strs1=fun1.apply(20);
